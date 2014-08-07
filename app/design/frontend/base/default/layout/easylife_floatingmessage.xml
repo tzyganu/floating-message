@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<!--
+/**
+* Easylife_FloatingMessage extension
+*
+* NOTICE OF LICENSE
+*
+* This source file is subject to the MIT License
+* that is bundled with this package in the file LICENSE_EASYLIFE_FLOATING_MESSAGE.txt.
+* It is also available through the world-wide-web at this URL:
+* http://opensource.org/licenses/mit-license.php
+*
+* @category       Easylife
+* @package        Easylife_FloatingMessage
+* @copyright      Copyright (c) 2014
+* @license        http://opensource.org/licenses/mit-license.php MIT License
+*/
+-->
+<layout>
+    <default>
+        <reference name="head">
+            <action method="addItem" ifconfig="easylife_floatingmessage/settings/enabled">
+                <type>js_css</type>
+                <name>prototype/windows/themes/default.css</name>
+            </action>
+            <action method="addCss" ifconfig="easylife_floatingmessage/settings/enabled">
+                <css>lib/prototype/windows/themes/magento.css</css>
+            </action>
+            <action method="addJs" ifconfig="easylife_floatingmessage/settings/enabled">
+                <js>prototype/window.js</js>
+            </action>
+            <action method="addJs" ifconfig="easylife_floatingmessage/settings/enabled">
+                <js>easylife_floatingmessage/floating.js</js>
+            </action>
+        </reference>
+        <reference name="before_body_end">
+            <block type="easylife_floatingmessage/js" template="easylife_floatingmessage/js.phtml" name="floating-message" />
+        </reference>
+    </default>
+</layout>

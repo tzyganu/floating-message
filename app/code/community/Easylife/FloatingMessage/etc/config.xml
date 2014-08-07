@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<!--
+/**
+* Easylife_FloatingMessage extension
+*
+* NOTICE OF LICENSE
+*
+* This source file is subject to the MIT License
+* that is bundled with this package in the file LICENSE_EASYLIFE_FLOATING_MESSAGE.txt.
+* It is also available through the world-wide-web at this URL:
+* http://opensource.org/licenses/mit-license.php
+*
+* @category       Easylife
+* @package        Easylife_FloatingMessage
+* @copyright      Copyright (c) 2014
+* @license        http://opensource.org/licenses/mit-license.php MIT License
+*/
+-->
+<config>
+    <modules>
+        <Easylife_FloatingMessage>
+            <version>1.0.0</version>
+        </Easylife_FloatingMessage>
+    </modules>
+    <global>
+        <helpers>
+            <easylife_floatingmessage>
+                <class>Easylife_FloatingMessage_Helper</class>
+            </easylife_floatingmessage>
+        </helpers>
+        <blocks>
+            <easylife_floatingmessage>
+                <class>Easylife_FloatingMessage_Block</class>
+            </easylife_floatingmessage>
+        </blocks>
+        <models>
+            <easylife_floatingmessage>
+                <class>Easylife_FloatingMessage_Model</class>
+            </easylife_floatingmessage>
+        </models>
+    </global>
+    <frontend>
+        <layout>
+            <updates>
+                <easylife_floatingmessage>
+                    <file>easylife_floatingmessage.xml</file>
+                </easylife_floatingmessage>
+            </updates>
+        </layout>
+        <!--<events>-->
+            <!--<controller_action_predispatch>-->
+                <!--<observers>-->
+                    <!--<easylife_floatingmessage>-->
+                        <!--<model>easylife_floatingmessage/debug</model>-->
+                        <!--<method>addAll</method>-->
+                    <!--</easylife_floatingmessage>-->
+                <!--</observers>-->
+            <!--</controller_action_predispatch>-->
+        <!--</events>-->
+    </frontend>
+    <adminhtml>
+        <translate>
+            <modules>
+                <Easylife_FloatingMessage>
+                    <files>
+                        <default>Easylife_FloatingMessage.csv</default>
+                    </files>
+                </Easylife_FloatingMessage>
+            </modules>
+        </translate>
+    </adminhtml>
+    <default>
+        <easylife_floatingmessage>
+            <settings>
+                <enabled>0</enabled>
+                <selector>$$('ul.messages')[0]</selector>
+                <show>Effect.SlideDown</show>
+                <hide>Effect.SlideUp</hide>
+                <modal>0</modal>
+                <zindex>1000</zindex>
+                <position>top</position>
+                <style>magento</style>
+            </settings>
+        </easylife_floatingmessage>
+    </default>
+</config>

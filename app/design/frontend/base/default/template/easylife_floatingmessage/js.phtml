@@ -1,0 +1,5 @@
+<?php if ($this->isEnabled()) : ?>
+    <script type="text/javascript">
+        var floatingMessages = new Easylife.FloatingMessage(<?php echo $this->getConfig(true)?>);
+    </script>
+<?php endif;?>

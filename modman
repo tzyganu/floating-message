@@ -1,0 +1,7 @@
+#Easylife Floating Messages
+app/etc/modules/Easylife_FloatingMessage.xml    app/etc/modules/Easylife_FloatingMessage.xml
+app/code/community/Easylife/FloatingMessage app/code/community/Easylife/FloatingMessage
+app/locale/en_US/Easylife_FloatingMessage.csv   app/locale/en_US/Easylife_FloatingMessage.csv
+app/design/frontend/base/default/layout/easylife_floatingmessage.xml    app/design/frontend/base/default/layout/easylife_floatingmessage.xml
+app/design/frontend/base/default/template/easylife_floatingmessage  app/design/frontend/base/default/template/easylife_floatingmessage
+js/easylife_floatingmessage    js/easylife_floatingmessage
